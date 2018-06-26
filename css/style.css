@@ -2,31 +2,32 @@
 
 body {
   background-color: #EAEAEA;
-  font-family: "system-ui", sans-serif;
+  font-family: "arial", sans-serif;
   font-size: 10px;
-}
-
-
-h1 {
-  font-size: 2em
-  font-family: "Times New Roman", Times, serif;
+  text-align: center;
 }
 
   h1 {
     color: #000000;
-    font-size: 3em;
+    font-size: 2em;
+    font-stretch: expanded;
   }
 
+.container {
+    padding: 25px 25px 25px 25px;
+}
 
 .preview {
   width: 100%;
   min-height: 300px;
+  margin: 1% 0;
+  padding: 23px 23px;
+  text-align: left;
   background: no-repeat url('https://github.com/katrinalalata/css-exercise-four/blob/master/images/baku.jpg?raw=true');
   background-color: #EAEAEA;
   background-size: cover;
+  font-family: "Times New Roman", Times, serif;
   float: left;
-  margin: 1% 0;
-  padding: 20px 25px;
 }
 
 .london {
