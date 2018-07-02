@@ -1,10 +1,8 @@
 *, *:after, *:before { box-sizing: border-box; }
 
 body {
-  background-color: #EAEAEA;
-  font-family: "arial", sans-serif;
+  background-color: #dadada;
   font-size: 10px;
-  text-align: center;
 }
 
   h1 {
@@ -13,55 +11,74 @@ body {
     font-stretch: expanded;
   }
 
-.container {
-    padding: 25px 25px 25px 25px;
+.container > h1 {
+  margin: 30px auto;
+  font-family: sans-serif;
+  font-size: 1.4em;
+  letter-spacing: .2em;
+  text align: center;
+  text-transform: uppercase;
 }
 
 .preview {
+  height: 300px;
+  margin: 2em 0;
   width: 100%;
-  min-height: 300px;
-  margin: 1% 0;
-  padding: 23px 23px;
+}
+
+.preview h1 {
+  font-size: 2.4em;
+  padding: 10%;
   text-align: left;
-  background: no-repeat url('https://github.com/katrinalalata/css-exercise-four/blob/master/images/baku.jpg?raw=true');
-  background-color: #EAEAEA;
-  background-size: cover;
-  font-family: "Times New Roman", Times, serif;
-  float: left;
 }
 
 .london {
-  background-image: url('https://github.com/katrinalalata/css-exercise-four/blob/master/images/london.png?raw=true')
+  background-image: url(../images/london.png);
+  background-size: cover;
+  background-position: left;
 }
 
 .baku {
-  background-image: url('https://github.com/katrinalalata/css-exercise-four/blob/master/images/baku.jpg?raw=true')
+  background-image: url(../images/baku.jpg);
+  background-size: cover;
+  background-position: left;
 }
 
 .rome {
-  background-image: url('https://github.com/katrinalalata/css-exercise-four/blob/master/images/rome.jpg?raw=true')
+  background-image: url(../images/rome.jpg);
+  background-size: cover;
+  background-position: left;
 }
 
 .madrid {
-  background-image: url('https://github.com/katrinalalata/css-exercise-four/blob/master/images/madrid.jpg?raw=true')
+  background-image: url(../images/madrid.jpg);
+  background-size: cover;
+  background-position: left;
 }
 
-  @media screen and (min-width: 575px){
-     .preview {
-      margin: 1%;
+  @media screen and (min-width: 600px){
+     .container {
+      width: 80%;
+      margin: 0 auto;
+    }
+
+    .preview {
+      float: right;
+      height: 200px;
+      margin: 1% 1%;
       width: 48%;
     }
   }
 
-  @media screen and (min-width: 60em) {
-    body {
-      background-color: #EAEAEA;
-    }
-   }
-
-   @media screen and (min-width: 60em){
+   @media screen and (min-width: 900px){
       .preview {
-       margin: 1%;
        width: 23%;
      }
+     
+     .preview {
+       background-size: cover;
+       float: left;
+       height: 200px;
+       margin: 2em 1%;
+       width: 23%;
    }
